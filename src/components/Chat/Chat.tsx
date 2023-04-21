@@ -272,20 +272,20 @@ const Chat = ({
   }
 
   return (
-    <div className="react-chatbot-kit-chat-container">
-      <div className="react-chatbot-kit-chat-inner-container">
+    <div className="react-at-chatbot-kit-chat-container">
+      <div className="react-at-chatbot-kit-chat-inner-container">
         <ConditionallyRender
           condition={!!customComponents.header}
           show={
             customComponents.header && customComponents.header(actionProvider)
           }
           elseShow={
-            <div className="react-chatbot-kit-chat-header">{header}</div>
+            <div className="react-at-chatbot-kit-chat-header">{header}</div>
           }
         />
 
         <div
-          className="react-chatbot-kit-chat-message-container"
+          className="react-at-chatbot-kit-chat-message-container"
           ref={chatContainerRef}
         >
           <ConditionallyRender
@@ -303,22 +303,22 @@ const Chat = ({
           <div style={{ paddingBottom: '15px' }} />
         </div>
 
-        <div className="react-chatbot-kit-chat-input-container">
+        <div className="react-at-chatbot-kit-chat-input-container">
           <form
-            className="react-chatbot-kit-chat-input-form"
+            className="react-at-chatbot-kit-chat-input-form"
             onSubmit={handleSubmit}
           >
             <input
-              className="react-chatbot-kit-chat-input"
+              className="react-at-chatbot-kit-chat-input"
               placeholder={placeholder}
               value={input}
               onChange={(e) => setInputValue(e.target.value)}
             />
             <button
-              className="react-chatbot-kit-chat-btn-send"
+              className="react-at-chatbot-kit-chat-btn-send"
               style={customButtonStyle}
             >
-              <ChatIcon className="react-chatbot-kit-chat-btn-send-icon" />
+              <ChatIcon className="react-at-chatbot-kit-chat-btn-send-icon" />
             </button>
           </form>
         </div>
